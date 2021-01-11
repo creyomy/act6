@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" >
+// FIlter anything
+$(document).ready(function () {
+  $("#anythingSearch").on("keyup", function () {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.sidebar {
+  width: 35%;
+  height: 80vh;
+  min-height: 200px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  font-size: 14px;
+  font-family: Verdana;
+  
+}
+.bottom {
+  justify-self: bottom;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #FF8C00;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.main {
+  width: 60%;
+  height: 80vh;
+  min-height: 1000px;
+  display: -webkit-box;
+  background-color: #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.main,
+.sidebar {
+  border: 5px solid #222;
+  background-color: #0dba86;
+  border-radius: 10px;
+  color: #222;
+  padding: 15px;
+   font-family: Verdana;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+body {
+  padding: 11%;
+  background-color: #ccc;
+  font-size: 23px;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+   background-color: lightblue
+}
+
+code, pre {
+  background-color: #ccc;
+  padding: 0 3px;
+  border-radius: 5px;
+}
+blockquote {
+color:gray;
+font-size:8px;
+}
+a{
+
+margin-left:-18px;
+}
+p {
+ margin-bottom: -15px;
+ }
+ img{
+ display:inline-block
+ }
+ .button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+  <div class="main">
+  <div class="container">
+  <input class="form-control" id="anythingSearch" type="text" placeholder="Type something to search list items"><img src="cs.png"  width="120" height="120" style="float:right"> 
+<button class="button button1">search</button>
+</div> 
+
+    <h2>Thesis List</h2>
+	<h3>cloud</h3>
+<hr> 
+	<a href="url">cloud based monitoring system for events and marketing
+	<font size="1px"><p>tags:  
+	<a href="cloud.html">cloud</a><a href="monitoring.html">monitoring</a>
+	<a href="exploration.html">exploration</a><a href="arduino.html">arduino</a>
+	<p>Adviser:  <a href="mike.html">Judge,mike</a>
+	<blockquote> posted 2 months ago <p style="color:black;font-size:13px;" >
+	Lorem ipsum dolor sit amet conesctetur adiplisicing elit.
+	,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation
+	ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis. aute irure dolor....</blockquote></font>
+	  <p style="font-size:18px;"> page 1 of 2</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="cloud.html" class="previous round">&#8249;</a>&nbsp;&nbsp;&nbsp;
+		<a href="cloud2.html" class="next round">&#8250;</a>
+		
+</div>
+<div class="sidebar">
+    <h1>Thesis Search </h1>
+	<UL>
+<p><b>Computer Studies Thesis Search engine.</p>
+<p>Total Titles :6 </p>
+<p>Latest Posts </b></p><br>
+ <LI> <a href="childhood.html">How Music Affects Early Childhood Development</a></LI>
+ <LI> <a href="arts.html">How Expressive Arts Therapy and Outdoor Adventure Activities Can Increase
+  Interpersonal Communication Skills: Adventure in Building  Communication with Children</a></LI>
+  <LI><a href="selfart.html">An Exploration of the Interrelationships between Self,Art and Oppression</a></LI></UL>
+<b> <p> Most Commented Posts </p> </b>
+<UL>
+ <LI> <a href="monitoring.html">cloud based monitoring system for events and marketing</a></LI>
+  <LI> <a href="arts.html">How expressive Arts Therapy and Outdoor Adventures Activities Can increase Interpersonal Communication Skills:
+  Advednture in Building Comminication with children</a></LI>
+   <LI> <a href="selftimer.html">arduino self timer for the cloud</a></LI>
+	<LI> <a href="insect.html">arduino based insect tracker</a></LI>
+		<LI><a href="selfart.html">An Exploration of the Interrelationships between Self, Art and Oppression</a></LI></UL>
+
+</div>
+  </div>
+</div>
+</body>
+</html> 
